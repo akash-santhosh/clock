@@ -22,31 +22,32 @@ body {
 }
 
 body {
-  background-color: gray;
+  background-color: rgb(0, 0, 0);
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/static/images/default-min.jpg");
   background-size: cover;
-  color: #fff;
+  color: #ffffff;
   font-family: Barlow, sans-serif;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: relative;
-  padding: 1.5rem 1rem 2.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
   height: 100%;
 }
 
 .header {
   flex: 1;
+  height: 10%;
   text-align: center;
 }
 
 .upgrade-banner {
-  background: #7732b7;
+  background: #a1ca0e;
   border-radius: 60px;
   color: #fff;
   display: none;
@@ -63,11 +64,16 @@ body {
 .date {
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 #date {
-  margin-left: 10px;
   font-size: 1.25rem;
+  display: flex;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-align: center;
 }
 
 #time {
@@ -148,7 +154,6 @@ body {
 
   #date {
     font-size: 3rem;
-    margin-left: 15px;
   }
 
   #time {
@@ -188,7 +193,7 @@ body {
 
 @media screen and (orientation: landscape) {
   .header {
-    text-align: right;
+    text-align: center;
   }
 }
 
@@ -309,6 +314,11 @@ body {
   #time {
     font-size: 31.25rem;
   }
+
+  #time span {
+    font-size: 10rem;
+  }
+}
 
   #time span {
     font-size: 10rem;
