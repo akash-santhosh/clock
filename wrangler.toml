@@ -1,6 +1,6 @@
-name="clock-app"
+name="clock"
 main="src/index.jsx"
-compatibility_date = "2022-09-22"
+compatibility_date = "2025-04-12"
 workers_dev = true
 
 [site]
@@ -14,14 +14,14 @@ workers_dev = true
 
 [env.stage]
 workers_dev = false
-route = { pattern = "stage-clock.srly.io", custom_domain = true }
+route = { pattern = "clock.aks.one", custom_domain = true }
 
 [env.stage.vars]
 ENV = "stage"
 
 [env.production]
 workers_dev = false
-route = { pattern = "clock.srly.io", custom_domain = true }
+route = { pattern = "clock.aks.one", custom_domain = true }
 
 [env.production.vars]
 ENV = "production"
